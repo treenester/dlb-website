@@ -1,0 +1,302 @@
+/* My Code */
+
+* {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+}
+
+h4 {
+    font-family: Arial;
+    font-size: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+a {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+body {
+    margin-top: 100px;
+    background-color: #0f1613;
+    color: rgb(224, 226, 200);
+    text-shadow: 2px 2px 8px #111;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f1613;
+}
+
+.header-brand {
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    /*display: inline-block;*/
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+}
+
+main {
+    top: 100px;
+}
+
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/studio.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.center-vert {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.banner h3 {
+    text-shadow: 2px 2px 8px #111;
+}
+
+.anchor{
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+
+.about {
+    height: calc(100vh - 100px);
+    padding-top: 10px;
+    width: 100%;
+    background-image: url('img/20210814_Me-Gtr.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.about ul {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.about ul li{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.about p {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    width: 75%;
+}
+
+.about a {
+    font-size: 16px;
+    color: #0df0f0;
+    text-decoration: underline;
+}
+
+.mixes {
+    height: calc(100vh - 100px);
+    padding-top: 10px;
+}
+
+.mixes a {
+    font-size: 16px;
+    color: #0df0f0;
+    text-decoration: underline;
+}
+
+.mixes p {
+    font-size: 14px;
+}
+
+.contact {
+    height: calc(100vh - 100px);
+    padding-top: 10px;
+}
+
+/* E-mail form Styles */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    height: calc(100vh - 110px);
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+}
+
+footer ul {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: fit-content;
+}
+
+footer ul li{
+    /*display: inline-block;*/
+    font-size: 20px;
+    line-height: 40px;
+    float: left;
+    list-style: none;
+    padding: 0 50px;
+}
+
+footer p {
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+}
+
+footer a {
+    font-size: 16px;
+    color: #0df0f0;
+    text-decoration: underline;
+}
+
+footer h3 {
+    padding-top: 50px;
+}
+
+footer h4 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        text-align: left;
+        line-height: 38px;
+        margin: 31px 0;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+    
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+    
+    header nav ul li a {
+        line-height: 60px;
+    }
+
+    .banner {
+        height: 500px;
+    }
+    
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+/*    .about {
+        height: 500px;
+    }
+*/
+
+    .about a {
+        font-size: 16px;
+        color: rgb(13, 240, 240);
+        text-decoration: underline;
+    }
+
+    footer {
+        height: 500px;
+    }
+}

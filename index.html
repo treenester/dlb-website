@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website for Rocky Branch Studio, music production services.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="audio, mixing, mastering, recording">
+        <meta name="author" content="David L. Beard">
+        <title>Rocky Branch Studio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#top" class="header-brand"><img width="50" src="img/color_logo_transparent.svg" alt="RBS"></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mixes">Mixes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="banner">
+                <div class="center-vert">
+                    <h1>WELCOME TO<br>ROCKY BRANCH STUDIO</h1>
+                    <br>
+                    <h2>Music Production Services</h2>
+                </div>
+            </section>
+
+            <div class="wrapper">   <!-- Main Wrapper -->
+            
+                <section class="about">
+                    <h2 id="about" class="anchor">About Me</h2>
+                    <ul>
+                        <li>Producer, Singer, Songwriter</li>
+                        <li>Over a decade Mixing & Mastering</li>
+                        <li>Specializing in Southern & Bluegrass Gospel Music</li>
+                        <li>Unique In-The-Box (ITB) digital production, using mostly Open-Source Software</li>
+                    </ul>
+                    <p>Let's <a href="#contact">discuss</a> Your next project / idea. Whether it's one song, an EP, or a full album, we may have a solution that fits your production needs.</p>
+                </section>
+                
+                <section class="mixes">
+                    <h2 id="mixes" class="anchor">Mixes</h2>
+                        <ul>
+                            <li><a href="https://soundcloud.com/treenester/grace-thelivingstons-david-beard-mix">Grace - The Livingstons</a></li>
+                            <li><a href="https://soundcloud.com/treenester/sing-me-back-home">Sing Me Back Home - Wade Spencer</a></li>
+                            <li><a href="https://soundcloud.com/treenester/mountaintop-mix">Mountaintop - The Little Roy & Lizzie Show</a></li>
+                            <li><a href="https://soundcloud.com/treenester/go-tell-it-on-the-mountain-mix">Go Tell It On The Mountain - Kevin Ward</a></li>
+                            <li><a href="https://soundcloud.com/treenester/water-grave">Water Grave - Wade Spencer</a></li>
+                        </ul>
+                        <p>In today's music world, artists have more options than ever! There are virtually no limits when it comes to creating music. You can now gather from many talented and creative minds, and make the choice that fits you and/or your production. I have a genuine passion for Sothern and Bluegrass Gospel music, but I have mixed many other styles. So whether you need Mixing, Mastering or full Audio Production, if you think I may fit the need for your project, please <a href="#contact">contact</a> me. I look forward to hearing from you.
+                        </p>
+                        <br>
+                        <p>Keep making music!</p>
+                </section>
+                
+                <section class="contact">
+                    <h2 id= "contact" class= "anchor">Contact Me</h2>
+                    <div class="contact-form">
+                            <!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
+                        <form method="post" action="https://www.rockybranchstudio.com/formmail.php" name="SampleForm">
+                            <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER"/>
+
+                            <!-- STEP 2: Put your email address in the 'recipients' value.
+                                        Note that you also have to allow this email address in the
+                                        $TARGET_EMAIL setting within formmail.php!
+                            -->
+                            <input type="hidden" name="recipients" value="david@rockybranchstudio.com"/>
+
+                            <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+                                    NOTE: DO NOT put your email address and name here.
+                                    "Your email address" and "Your name" are error messages for your users to see,
+                                    not placeholders for you to replace.
+                            -->
+                            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+
+                            <!-- STEP 4: Put your subject line in the 'subject' value. -->
+                            <input type="hidden" name="subject" value="RBS Potential Client Inquiry"/>
+
+                            <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+
+                            <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+                            <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+                            <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+                            <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+
+                            <table>
+                                <tr>
+                                    <td>
+                                    <p>Your Name:</p>
+                                    </td>
+                                    <td><input type="text" name="FullName" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p>Your Email address:</p>
+                                    </td>
+                                    <td><input type="text" name="EmailAddr" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="form-msg">
+                                    <p>Leave a message:</p>
+                                    </td>
+                                    <td><textarea name="mesg" rows="10" cols="30"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="Submit" /></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
+
+            </div>  <!-- Main Wrapper -->
+        </main>
+        <div class="wrapper">   <!-- Footer Wrapper -->
+            <footer>
+                
+                <h4>© 2020 Copyright: Rocky Branch Studio.com.</h4>
+            </footer>
+        </div>  <!-- Footer Wrapper -->
+    </body>
+</html>
